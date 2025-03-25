@@ -44,6 +44,11 @@ bool is_last_id(const char* id) {
     char copy[MAX_ID_LENGTH];
     strncpy(copy, id, MAX_ID_LENGTH);
 
+    if (copy[sizeof(copy) - 1] != 0)
+    {
+        copy[sizeof(copy) - 1] = 0;
+    }
+
     int segment_count = 0;
     char* segments[MAX_SEGMENTS] = { 0 };
     char* token = strtok(copy, "-");
@@ -93,6 +98,11 @@ bool validate_id(const char* id) {
     // Разбиение на сегменты
     char copy[MAX_ID_LENGTH];
     strncpy(copy, id, MAX_ID_LENGTH);
+
+    if (copy[sizeof(copy) - 1] != 0)
+    {
+        copy[sizeof(copy) - 1] = 0;
+    }
 
     int segment_count = 0;
     char* segments[MAX_SEGMENTS] = { 0 };
