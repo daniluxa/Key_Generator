@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shumkin\\Documents\\GitHub\\Key_Generator\\Key_Generator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF6B4093-C3C6-4627-B0C7-EED3364E4FF3}|Key_Generator.vcxproj|C:\\Users\\shumkin\\Documents\\GitHub\\Key_Generator\\Key_Generator\\Key_Generator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FF6B4093-C3C6-4627-B0C7-EED3364E4FF3}|Key_Generator.vcxproj|solutionrelative:Key_Generator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Key_Generator.cpp",
+              "DocumentMoniker": "C:\\Users\\shumkin\\Documents\\GitHub\\Key_Generator\\Key_Generator\\Key_Generator.cpp",
+              "RelativeDocumentMoniker": "Key_Generator.cpp",
+              "ToolTip": "C:\\Users\\shumkin\\Documents\\GitHub\\Key_Generator\\Key_Generator\\Key_Generator.cpp",
+              "RelativeToolTip": "Key_Generator.cpp",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAIwGEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-25T09:43:14.952Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
