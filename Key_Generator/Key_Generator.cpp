@@ -192,8 +192,8 @@ bool get_next_id(const char* current_id, char* next_id, size_t buffer_size) {
 
 int main() {
     setlocale(LC_ALL, "Russian");
-    char current_id[MAX_ID_LENGTH];
-    char next_id[MAX_ID_LENGTH];
+    char current_id[MAX_ID_LENGTH+1];
+    char next_id[MAX_ID_LENGTH+1];
 
     printf("Введите текущий ID: ");
     if (fgets(current_id, sizeof(current_id), stdin)) {
