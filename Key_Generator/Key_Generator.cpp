@@ -39,6 +39,31 @@ bool validate_hyphens(const char* id) {
     return true;
 }
 
+// Проверка, является ли ID последним возможным
+bool is_last_id(const char* id) {
+    char copy[MAX_ID_LENGTH];
+    strncpy(copy, id, MAX_ID_LENGTH);
+
+    int segment_count = 0;
+    char* segments[MAX_SEGMENTS] = { 0 };
+    char* token = strtok(copy, "-");
+
+    while (token != NULL) {
+        segments[segment_count++] = token;
+        token = strtok(NULL, "-");
+    }
+
+    // Проверяем все сегменты на максимальные значения
+    for (int i = 0; i < segment_count; i++) {
+        if (segments[i][0] != 'Z' || segments[i][1] != '9') {
+            return false;
+        }
+    }
+
+    // Если количество сегментов уже максимальное
+    return segment_count == MAX_SEGMENTS;
+}
+
 
 bool validate_id(const char* id) {
     // Проверка длины
@@ -58,6 +83,11 @@ bool validate_id(const char* id) {
             fprintf(stderr, "Обнаружен запрещенный символ '%c'\n", id[i]);
             return false;
         }
+    }
+
+    if (is_last_id(id)) {
+        fprintf(stderr, "Достигнут последний возможный идентификатор\n");
+        return false;
     }
 
     // Разбиение на сегменты
